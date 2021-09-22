@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.0;netstandard2.1;net45;net46;net461</TargetFrameworks>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Company>LIIKSOFT</Company>
+	  <Authors>Luis Eduardo Cochachi Chamorro</Authors>
+	  <Version>1.0.0</Version>	  
+	  <PackageIconUrl />
+	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+	  <PackageIcon>package.v1.0.png</PackageIcon>
+	  <Description>LazyContext for EntityFramwork and Dapper</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icons\package.v1.0.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
