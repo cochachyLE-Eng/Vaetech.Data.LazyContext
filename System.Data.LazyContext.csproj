@@ -11,6 +11,8 @@
 	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
 	  <PackageIcon>package.v1.0.png</PackageIcon>
 	  <Description>LazyContext for EntityFramwork and Dapper</Description>
+	  <RepositoryUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
