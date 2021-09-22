@@ -5,7 +5,7 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Company>LIIKSOFT</Company>
 	  <Authors>Luis Eduardo Cochachi Chamorro</Authors>
-	  <Version>1.0.0</Version>	  
+	  <Version>1.0.1</Version>	  
 	  <PackageIconUrl />
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
@@ -13,6 +13,7 @@
 	  <Description>LazyContext for EntityFramwork and Dapper</Description>
 	  <RepositoryUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</RepositoryUrl>
 	  <PackageProjectUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</PackageProjectUrl>
+	  <PackageTags>LazyContext, EntityFramework, Dapper</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
