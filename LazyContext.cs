@@ -1,4 +1,6 @@
-﻿namespace System.Data.LazyContext
+﻿using System;
+
+namespace Vaetech.Data.LazyContext
 {
     public abstract class LazyContext<TContext> where TContext : class
     {

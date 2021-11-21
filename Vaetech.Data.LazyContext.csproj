@@ -9,15 +9,16 @@
 	  <PackageIconUrl />
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
-	  <PackageIcon>package.v1.0.png</PackageIcon>
+	  <PackageIcon>package.png</PackageIcon>
 	  <Description>LazyContext for EntityFramwork and Dapper</Description>
 	  <RepositoryUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</RepositoryUrl>
 	  <PackageProjectUrl>https://github.com/cochachyLE-Eng/System.Data.LazyContext</PackageProjectUrl>
 	  <PackageTags>LazyContext, EntityFramework, Dapper</PackageTags>
+	  <PackageId>Vaetech.Data.LazyContext</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\icons\package.v1.0.png">
+    <None Include="..\..\..\icons\package.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
