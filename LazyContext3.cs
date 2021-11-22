@@ -31,7 +31,7 @@ namespace Vaetech.Data.LazyContext
             else if (typeof(TContext) == typeof(TContext3))
                 return (TContext)(object)__context3.Value;
 
-            return default(TContext);
+            throw new Exception($"DbContext {typeof(TContext)?.Name} does not exist.");
         }
         public TContext NewContext<TContext>()where TContext: TContext1,TContext2,TContext3
         {
@@ -42,7 +42,7 @@ namespace Vaetech.Data.LazyContext
             else if (typeof(TContext) == typeof(TContext3))
                 return (TContext)(object)new Lazy<TContext3>(__contextFactory3).Value;
 
-            return default(TContext);
+            throw new Exception($"DbContext {typeof(TContext)?.Name} does not exist.");
         }
     }
 }
