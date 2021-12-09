@@ -2,7 +2,7 @@
 
 namespace Vaetech.Data.LazyContext
 {
-    public abstract class LazyContext<TContext1,TContext2, TContext3, TContext4, TContext5, TContext6> 
+    public abstract class LazyContext<TContext1,TContext2, TContext3, TContext4, TContext5, TContext6> : LazyContextResult
         where TContext1 : class 
         where TContext2 : class
         where TContext3 : class
@@ -43,7 +43,7 @@ namespace Vaetech.Data.LazyContext
             __contextFactory6 = contextFactory6;
             __context6 = new Lazy<TContext6>(contextFactory6);
         }
-        public TContext GetContext<TContext>() where TContext:TContext1,TContext2,TContext3,TContext4,TContext5,TContext6
+        public TContext GetContext<TContext>() where TContext : class
         {
             if(typeof(TContext) == typeof(TContext1))
                 return (TContext)(object) __context1.Value;
@@ -60,7 +60,7 @@ namespace Vaetech.Data.LazyContext
 
             throw new Exception($"DbContext {typeof(TContext)?.Name} does not exist.");
         }
-        public TContext NewContext<TContext>()where TContext: TContext1,TContext2,TContext3,TContext4,TContext5,TContext6
+        public TContext NewContext<TContext>() where TContext : class
         {
             if (typeof(TContext) == typeof(TContext1))
                 return (TContext)(object) new Lazy<TContext1>(__contextFactory1).Value;

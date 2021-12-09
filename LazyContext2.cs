@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Vaetech.Data.ContentResult;
 
 namespace Vaetech.Data.LazyContext
 {
-    public abstract class LazyContext<TContext1,TContext2> 
+    public abstract class LazyContext<TContext1,TContext2> : LazyContextResult
         where TContext1 : class 
         where TContext2 : class
     {
@@ -17,7 +20,7 @@ namespace Vaetech.Data.LazyContext
             __contextFactory2 = contextFactory2;
             __context2 = new Lazy<TContext2>(contextFactory2);
         }
-        public TContext GetContext<TContext>() where TContext:TContext1,TContext2
+        public TContext GetContext<TContext>() where TContext : class
         {
             if(typeof(TContext) == typeof(TContext1))
                 return (TContext)(object) __context1.Value;
@@ -26,7 +29,7 @@ namespace Vaetech.Data.LazyContext
 
             throw new Exception($"DbContext {typeof(TContext)?.Name} does not exist.");
         }
-        public TContext NewContext<TContext>()where TContext: TContext1,TContext2
+        public TContext NewContext<TContext>() where TContext : class
         {
             if (typeof(TContext) == typeof(TContext1))
                 return (TContext)(object) new Lazy<TContext1>(__contextFactory1).Value;
@@ -34,6 +37,6 @@ namespace Vaetech.Data.LazyContext
                 return (TContext)(object)new Lazy<TContext2>(__contextFactory2).Value;
 
             throw new Exception($"DbContext {typeof(TContext)?.Name} does not exist.");
-        }
+        }        
     }
 }

@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFrameworks>netstandard2.0;netstandard2.1;net45;net46;net461</TargetFrameworks>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Company>LIIKSOFT</Company>
 	  <Authors>Luis Eduardo Cochachi Chamorro</Authors>
-	  <Version>1.0.2</Version>	  
+	  <Version>1.0.5</Version>	  
 	  <PackageIconUrl />
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
@@ -22,6 +22,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vaetech.Data.ContentResult" Version="1.6.6" />
   </ItemGroup>
 
 </Project>
