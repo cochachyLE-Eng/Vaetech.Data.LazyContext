@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vaetech.Data.ContentResult;
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!
+* Owners: Liiksoft
+* Create by Luis Eduardo Cochachi Chamorro
+* License: MIT or Apache-2.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!*/
 namespace Vaetech.Data.LazyContext
 {
     public class LazyContextResult

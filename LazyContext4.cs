@@ -1,8 +1,12 @@
 ﻿using System;
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!
+* Owners: Liiksoft
+* Create by Luis Eduardo Cochachi Chamorro
+* License: MIT or Apache-2.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!*/
 namespace Vaetech.Data.LazyContext
 {
-    public abstract class LazyContext<TContext1,TContext2, TContext3, TContext4> : LazyContextResult
+    public class LazyContext<TContext1,TContext2, TContext3, TContext4> : LazyContextResult
         where TContext1 : class 
         where TContext2 : class
         where TContext3 : class

@@ -1,8 +1,12 @@
 ﻿using System;
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!
+* Owners: Liiksoft
+* Create by Luis Eduardo Cochachi Chamorro
+* License: MIT or Apache-2.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!*/
 namespace Vaetech.Data.LazyContext
 {
-    public abstract class LazyContext<TContext> : LazyContextResult where TContext : class
+    public class LazyContext<TContext> : LazyContextResult where TContext : class
     {
         readonly Lazy<TContext> __context;
         readonly Func<TContext> __contextFactory;

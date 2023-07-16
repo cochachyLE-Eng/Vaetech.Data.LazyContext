@@ -5,7 +5,7 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Company>LIIKSOFT</Company>
 	  <Authors>Luis Eduardo Cochachi Chamorro</Authors>
-	  <Version>1.0.8</Version>	  
+	  <Version>1.0.9</Version>	  
 	  <PackageIconUrl />
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
